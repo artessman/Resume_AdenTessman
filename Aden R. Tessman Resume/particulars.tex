@@ -1,0 +1,127 @@
+\input{utilities}
+\usepackage{blindtext}  
+\usepackage{lipsum}
+
+\def\lrand{\lipsum[-]}
+\def\firstname{Aden}
+\def\lastname{Tessman}
+\def\email{artessman03@gmail.com}
+\def\linkedin{linkedin.com/in/aden-tessman}
+\def\github{github.com/artessman}
+\def\jasphone{+1 (682) 999-5012}
+
+% \def\jbegin{\begin{itemize}}
+% \def\jitem{\item }
+% \def\jend{\end{itemize}}
+\def\jbegin{\resumeItemListStart}
+\def\jitem{\resumeItem}
+\def\jend{\resumeItemListEnd}
+
+\def\profileSummary{
+\section{Post-Secondary and Career Goals}
+My primary career goal is to pursue a position as a Cybersecurity Architect or Artificial Intelligence Engineer. I plan to deepen my knowledge in both fields through targeted coursework and hands-on projects, focusing on network security, threat analysis, and machine learning. By gaining practical experience through internships, I aim to develop innovative solutions that protect sensitive data while ensuring compliance with industry standards. I envision integrating AI with cybersecurity to enhance system resilience against evolving threats. Ultimately, I aspire to lead advancements that contribute to a safer digital landscape.
+}
+
+
+\def\achievements{
+    \jbegin
+        \setlength{\itemsep}{.1em} % Adjust the spacing between items
+        \jitem{President’s List (2022-present)}
+        \jitem{Valedictorian, Class of 2022 (High School)}
+        \jitem{Buddy Bostick Foundation Scholarship Recipient}
+        \jitem{Marti Foundation Scholarship Recipient}
+    \jend
+}
+
+% # Add education item here
+\EducationTemplate{CollegeA}
+{2022}{2026}
+{Tarleton State University}
+{Pursuing Bachelor of Science}{Computer Science  (Software Engineering)}
+\EducationTemplate{CollegeB}
+{2022}{2026}
+{Tarleton State University}
+{Pursuing Bachelor of Science}{Cybersecurity}
+
+
+\ExpTemplate{DivPF}
+{2023 }
+{Present}
+{Tarleton State University}
+{Machine Intelligence and Security Research Lab}
+{Supervisor: Dr. Thejas Gubbi Sadashiva, Dept. CSEE}
+{
+\jbegin
+    \jitem{Gained hands-on experience in experimental design and data analysis }
+    \jitem{Utilized advanced techniques such as statistical modeling and software like Python }
+    \jitem{Collaborated with peers to develop comprehensive documentation of methodologies and findings, enhancing knowledge sharing and reproducibility of results.}
+\jend
+}
+
+
+\ExpTemplate{RBCCM}
+{Summer 2024 }
+{Present}
+{Tarleton State University}
+{Analysis of BERT Models for Phishing Detection}
+{Supervisor: Dr. Thejas Gubbi Sadashiva, Dept. CSEE}
+{
+\jbegin
+    \jitem{Project Title: Performance Analysis of BERT Models for Phishing Detection Using Advanced Sampling Techniques }
+    \jitem{Role: Head Researcher/ Team Lead }
+    \jitem{Conducted a comprehensive evaluation of various BERT models to assess their effectiveness in detecting phishing attempts.}
+    \jitem{Implementing and comparing multiple sampling methods, including oversampling, undersampling, SMOTE, and K-SMOTE, to optimize model performance and mitigate class imbalance.}
+\jend
+}
+
+
+% \ExpTemplate{GS}
+% {}
+% {2024 }
+% {Personal Project}
+% {Coconut Clicker}
+% {}
+% {
+% \jbegin
+%     \jitem{Role: Head Developer/ Team Lead}
+%     \jitem{Developed a game similar to Cookie Clicker using HTML  JavaScript, and CSS formatting, showcasing skills in web development.}
+% \jend
+% }
+
+\ExpTemplate{Rivigo}
+{2022}
+{Present}
+{201 N Ridgeway Dr, Cleburne, TX 76033 }
+{Therapy Tech}
+{\href{https://www.google.com/search?q=greater+health+and+rehab+phonecleburne+tx&client=opera-gx&hs=QlG&sca_esv=e936ada1b37f2909&sxsrf=ADLYWIKx21Y1VEbCtKAFKwnOuvBT3W6otg\%3A1730387453635&ei=_Z0jZ7u3JpPbwN4PwoO3-Qg&ved=0ahUKEwj7qf3L87iJAxWTLdAFHcLBLY8Q4dUDCBA&uact=5&oq=greater+health+and+rehab+phonecleburne+tx&gs_lp=Egxnd3Mtd2l6LXNlcnAiKWdyZWF0ZXIgaGVhbHRoIGFuZCByZWhhYiBwaG9uZWNsZWJ1cm5lIHR4MgoQIRigARjDBBgKMgQQIRgKSPsSUI8IWKkRcAJ4AZABAJgBf6ABpASqAQMyLjO4AQPIAQD4AQGYAgegArAEwgIKEAAYsAMY1gQYR5gDAOIDBRIBMSBAiAYBkAYFkgcDNC4zoAeWGw&sclient=gws-wiz-serp\#}{(817) 641-9700} }
+{
+\jbegin
+    \jitem{Developed strong time management skills by effectively prioritizing and engaging with multiple patients simultaneously}
+    \jitem{Fostered a positive and collaborative atmosphere that enhancing the recovery process}
+    \jitem{Demonstrated flexibility in responding to client needs, reflecting an ability to quickly learn new technologies and adjust to changing treatment requirements.}
+\jend
+}
+
+
+
+\def\skills{
+    \jbegin
+        \setlength{\itemsep}{.1em} 
+        \jitem{Operating Systems:  Windows 10, Windows 11, Ubuntu, CentOS}
+        \jitem{Languages:   C, C++, Java, Python, SQL, JavaScript}
+    \jend
+}
+% \DefineArrayVar{Education}{@}
+% {,}{School, Course, Stream, Start, End}
+% {,}{C,D}
+
+
+% % # Add experience item here
+
+
+
+
+% \renewcommand{addEducation}{}
+
+
+% # Add projects here
