@@ -13,4 +13,4 @@ You have two options to compile the LaTeX file ( `.tex`) into a PDF:
 2. Open your terminal or command prompt.
 3. Navigate to the directory containing the  `.tex` file.
 4. Run the command: `pdflatex your_filename.tex.`
-This will generate a PDF file in the same directory.
+This will generate a PDF file in the same directory. Please be sure all the `.tex` files are together locally.
