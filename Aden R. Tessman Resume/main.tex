@@ -135,7 +135,7 @@
 \titlesection
 \profileSummary
 
-\describe{College}{Start}
+%\describe{College}{Start}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -152,8 +152,6 @@
 
 \section{Achievements}
 \achievements
-
-
 \newcommand{\renderExp}[1]{
 \resumeSubheading
       {\csname #1@Company\endcsname}{\csname #1@Start\endcsname -- \csname #1@End\endcsname}
@@ -171,7 +169,7 @@
 
 \section{Previous Work Experience}
 \resumeSubHeadingListStart
-    \renderExp{Rivigo}
+    \renderExp{Rivigo1}
 \resumeSubHeadingListEnd
 
 \newcommand{\renderHck}[1]{
@@ -180,11 +178,38 @@
       {\csname #1@Date\endcsname}
       \csname #1@Highlights\endcsname
 }
+\resumeSubHeadingListStart
+    \renderExp{Rivigo2}
+\resumeSubHeadingListEnd
+
+\renewcommand{\renderHck}[1]{
+      \resumeProjectHeading
+      {\textbf{\csname #1@Title\endcsname} $|$ \csname #1@Position\endcsname}
+      {\csname #1@Date\endcsname}
+      \csname #1@Highlights\endcsname
+}
+\section{Research Showcase}
+\resumeSubHeadingListStart
+    \renderExp{RSC1}
+\resumeSubHeadingListEnd
+
+\renewcommand{\renderHck}[1]{
+      \resumeProjectHeading
+      {\textbf{\csname #1@Title\endcsname} $|$ \csname #1@Position\endcsname}
+      {\csname #1@Date\endcsname}
+      \csname #1@Highlights\endcsname
+}
+\resumeSubHeadingListStart
+    \renderExp{RSC2}
+\resumeSubHeadingListEnd
+
+\renewcommand{\renderHck}[1]{
+      \resumeProjectHeading
+      {\textbf{\csname #1@Title\endcsname} $|$ \csname #1@Position\endcsname}
+      {\csname #1@Date\endcsname}
+      \csname #1@Highlights\endcsname
+}
 \section{Languages and OS}
 \skills
-
-
-
-
 
 \end{document}
