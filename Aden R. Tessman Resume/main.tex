@@ -1,10 +1,3 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
 \documentclass[letterpaper,11pt]{article}
 \input{particulars}
 \usepackage{latexsym}
@@ -60,8 +53,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -69,7 +62,7 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
+  \item\footnotesize{
     {#1 \vspace{-2pt}}
   }
 }
@@ -80,7 +73,7 @@
 
 
 \newcommand{\classesList}[4]{
-    \item\small{
+    \item\footnotesize{
         {#1 #2 #3 #4 \vspace{-2pt}}
   }
 }
@@ -88,22 +81,22 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{#1} & \textbf{\footnotesize #2} \\
+      \textit{\footnotesize#3} & \textit{\footnotesize #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textit{\footnotesize#1} & \textit{\footnotesize #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
+      \footnotesize#1 & \textbf{\footnotesize #2}\\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -123,7 +116,7 @@
 \def\titlesection{
 \begin{center}
     {\Huge \scshape \firstname \ \lastname} \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ \jasphone ~ \href{mailto:artessman03@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{\email}} \\
+    \footnotesize \raisebox{-0.1\height}\faPhone\ \jasphone ~ \href{mailto:artessman03@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{\email}} \\
     \href{https://www.linkedin.com/in/aden-tessman-3b7203336/}{\raisebox{-0.2\height}\faLinkedin\ \underline{\linkedin}}  ~
     \href{https://github.com/artessman}{\raisebox{-0.2\height}\faGithub\ \underline{\github}}
     \vspace{-8pt}
@@ -150,7 +143,7 @@
 \resumeSubHeadingListEnd
 
 
-\section{Achievements}
+%\section{Achievements}
 \achievements
 \newcommand{\renderExp}[1]{
 \resumeSubheading
@@ -158,7 +151,13 @@
       {\csname #1@Designation\endcsname}{\csname #1@Location\endcsname}
       \csname #1@Highlights\endcsname
 }
-
+\section{Previous Work Experience}
+\resumeSubHeadingListStart
+    \renderExp{Rivigo1}
+\resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+    \renderExp{Rivigo2}
+\resumeSubHeadingListEnd
 \section{Projects and Extracurriculars}
     \resumeSubHeadingListStart
         \renderExp{RBCCM}
@@ -167,10 +166,7 @@
   \resumeSubHeadingListEnd
 % \vspace{-16pt}
 
-\section{Previous Work Experience}
-\resumeSubHeadingListStart
-    \renderExp{Rivigo1}
-\resumeSubHeadingListEnd
+
 
 \newcommand{\renderHck}[1]{
       \resumeProjectHeading
@@ -178,9 +174,7 @@
       {\csname #1@Date\endcsname}
       \csname #1@Highlights\endcsname
 }
-\resumeSubHeadingListStart
-    \renderExp{Rivigo2}
-\resumeSubHeadingListEnd
+
 
 \renewcommand{\renderHck}[1]{
       \resumeProjectHeading
